@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كويز مفاجئ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true">
+    <span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span>
+    <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span>
+  </div>
+
+  <main class="app">
+    <section class="quiz-card" id="quizCard">
+      <div class="top">
+        <span class="badge" id="questionNumber">السؤال 1 من 3</span>
+        <span class="mini-heart">♥</span>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <div class="screen active" id="questionScreen">
+        <div class="photo-frame" id="photoFrame">
+          <div class="photo-placeholder">
+            <!-- <span>📷</span> -->
+            <!-- <p>حطي صورتك هنا ❤️</p> -->
+            <!-- <img src="assets/IMG-20260916-WA0186.jpg" alt="Laila"> -->
+            <!-- <small>بدّلي الـ placeholder بالصورة اللي انتي عايزاها</small> -->
+          </div>
+        </div>
+
+        <p class="eyebrow">كويز مفاجئ</p>
+        <h1 id="question"></h1>
+
+        <div class="answers" id="answers"></div>
+
+        <div class="feedback" id="feedback" aria-live="polite"></div>
+
+        <button class="next-btn" id="nextBtn" type="button" hidden>
+        الي بعدهه
+        </button>
+      </div>
+
+      <div class="screen final-screen" id="finalScreen" hidden>
+        <div class="final-icon">
+          
+        </div>
+        <p>اشطر دكتوره 🥰</p>
+        <h1>مبرووووك يا ليلى</h1>
+        <br>
+
+        <button class="reveal-btn" id="revealBtn" type="button">
+         عرض الدرجه
+        </button>
+
+        <div class="hidden-message" id="hiddenMessage">
+          <p></p>
+          <strong>full mark tb3n ya 7opy 🥰</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
